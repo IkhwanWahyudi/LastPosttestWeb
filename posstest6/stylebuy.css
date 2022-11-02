@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@800&display=swap');
+
+:root {
+    --warna-text: black;
+    --warna-bg: white;
+    --warna-tbx: bisque;
+    --warna-heading: linear-gradient(rgba(0, 0, 0, 0.805),rgba(0, 0, 0, 0.805));
+    --text-tentang: azure;
+    --warna-footer: rgb(83, 83, 83);
+    --warna-tf: black;
+    --warna-tentang: linear-gradient(rgba(255, 255, 255, 0.292), rgba(255, 255, 255, 0.292));
+}
+
+html[data-color-mode='dark']{
+    --warna-text: white;
+    --warna-bg: black;
+    --warna-tbx: black;
+    --warna-heading: linear-gradient(rgba(255, 255, 255, 0.324),rgba(255, 255, 255, 0.324));
+    --text-tentang: black;
+    --warna-footer: white;
+    --warna-tf: rgb(90, 90, 90);
+    --warna-tentang: linear-gradient(rgba(0, 0, 0, 0.805),rgba(0, 0, 0, 0.805));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: var(--warna-text);
+    color: var(--warna-bg);
+    border: var(--warna-bg) 3px solid;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+button .switch {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: var(--warna-text);
+    color: var(--warna-bg);
+    border: var(--warna-bg) 3px solid;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.head{
+    min-height: 45vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    background-image: var(--warna-heading), url(Foto/sepatu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 90%;
+    color: var(--warna-tbx);
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%,-320%);
+    text-align: center;
+}
+
+.text-box p{
+    font-weight: 900;
+}
+
+.text-box hr{
+    margin-left:38% ;
+    margin-right: 38%;
+}
+
+
+nav link{
+    margin: 1px;
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 12px 12px;
+    top: 0;
+    position: sticky;
+}
+
+nav img{
+    margin: 3%;
+    width: 10%;
+    height: 30%;
+}
+
+nav ul {
+    list-style: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 140px;
+}
+
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--warna-tbx);
+    font-family: 'optimal', sans-serif;
+    padding: 10px 10px;
+    font-weight: 400;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--warna-tbx);
+    display: block;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: 'optimal', sans-serif;
+    color: var(--warna-tbx);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body {
+    background-color: var( --warna-bg);
+}
+
+.formulir{
+    background-color: var(--warna-footer);
+    box-sizing: border-box;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--warna-bg);
+    width: 80%;
+    margin-left: 135px;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+}
+
+.judul p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form td{
+    font-family: 'Ruda', sans-serif;
+}
+
+.foot1 {
+    font-size: 120%;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: var(--warna-footer);
+    color: var(--warna-tf);
+}
+
+.icon img{
+    padding-top: 20px;
+    width: 15px;
+}

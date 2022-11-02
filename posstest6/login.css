@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@600&display=swap');
+
+.login {
+    position: relative;
+    margin: 155px auto;
+    background-color: rgb(83, 83, 83);
+    width: min-content;
+    padding: 20px 100px;
+    border-radius: 20px;
+    font-family: 'Ruda', sans-serif;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+body {
+    background-color: black;
+}
